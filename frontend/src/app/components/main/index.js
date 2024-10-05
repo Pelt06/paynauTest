@@ -47,8 +47,19 @@ export default function Main() {
     }, [refresh]);
 
     const handleChange = (e) => {
+
+        const phonePattern = /^\+?[0-9\s]*$/;
+        if (name === "phoneNumber") {
+            if (!phonePattern.test(value)) {
+                e.target.setCustomValidity("Por favor, introduce un número de teléfono válido.");
+            } else {
+                e.target.setCustomValidity("");
+            }
+        }
+
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
+
 
     const cleanPersonData = () => {
         setFormData({
@@ -62,7 +73,13 @@ export default function Main() {
     }
     const handleAddPerson = async (e) => {
         e.preventDefault();
-        if (Object.values(formData).some(field => !field)) return;
+        if (Object.values(formData).some(field => !field)) {
+            Swal.fire({
+                icon: "error",
+                title: "Oops...",
+                text: "Revisa que todos los campos estén llenos!"
+            });
+        }
 
         const url = editing ? `${API_URL}update` : `${API_URL}create`;
         try {
@@ -89,13 +106,14 @@ export default function Main() {
             if (editing) {
                 setEditing(false);
             }
+
+            cleanPersonData();
+            setIsModalOpen(false);
+            setRefresh(!refresh)
+
         } catch (error) {
             console.error(`Error al ${editing ? 'actualizar' : 'crear'} el registro:`, error);
         }
-
-        cleanPersonData();
-        setIsModalOpen(false);
-        setRefresh(!refresh)
     };
 
     const handleDelete = async (id) => {

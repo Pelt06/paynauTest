@@ -10,7 +10,7 @@ export default function NewPerson({
       <div className="bg-gray-800 p-8 rounded-lg shadow-lg max-w-lg w-full transform transition-transform duration-300 ease-out scale-95 animate-zoom-in">
         <h2 className="text-2xl font-bold mb-4">{editing ? "Editar Persona" : "Añadir Persona"}</h2>
 
-        <form onSubmit={handleAddPerson} className="space-y-4">
+        <form onSubmit={handleAddPerson} method="POST" className="space-y-4">
           <div>
             <label className="block text-gray-400 text-sm font-bold mb-2" htmlFor="firstName">Nombre</label>
             <input
@@ -46,7 +46,7 @@ export default function NewPerson({
               value={formData.userName}
               onChange={handleChange}
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-900 leading-tight focus:outline-none focus:shadow-outline"
-              placeholder="Introduce el correo"
+              placeholder="Introduce el nombre de usuario"
             />
           </div>
 
@@ -55,9 +55,11 @@ export default function NewPerson({
             <input
               id="email"
               name="email"
-              type="text"
+              type="email"
               value={formData.email}
               onChange={handleChange}
+              onInvalid={(e) => e.target.setCustomValidity("Por favor, introduce un correo válido.")}
+              onInput={(e) => e.target.setCustomValidity('')}
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-900 leading-tight focus:outline-none focus:shadow-outline"
               placeholder="Introduce el correo"
             />
@@ -84,8 +86,11 @@ export default function NewPerson({
               type="text"
               value={formData.phoneNumber}
               onChange={handleChange}
+              onInvalid={(e) => e.target.setCustomValidity("Por favor, introduce un número de teléfono válido.")}
+              onInput={(e) => e.target.setCustomValidity('')}
+              pattern="\+?[0-9\s]*"
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-900 leading-tight focus:outline-none focus:shadow-outline"
-              placeholder="Introduce el teléfono"
+              placeholder="Introduce el número teléfono"
             />
           </div>
 
