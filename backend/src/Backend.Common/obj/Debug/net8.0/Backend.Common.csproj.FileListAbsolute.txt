@@ -10,3 +10,4 @@ C:\Users\PELT\Desktop\paynauTest\backend\src\Backend.Common\obj\Debug\net8.0\ref
 C:\Users\PELT\Desktop\paynauTest\backend\src\Backend.Common\obj\Debug\net8.0\Backend.Common.pdb
 C:\Users\PELT\Desktop\paynauTest\backend\src\Backend.Common\obj\Debug\net8.0\ref\Backend.Common.dll
 C:\Users\PELT\Desktop\paynauTest\backend\src\Backend.Common\obj\Debug\net8.0\Backend.Common.csproj.AssemblyReference.cache
+C:\Users\PELT\Desktop\paynauTest\backend\src\Backend.Common\obj\Debug\net8.0\Backend.Common.sourcelink.json

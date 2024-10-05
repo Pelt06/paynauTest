@@ -13,3 +13,4 @@ C:\Users\PELT\Desktop\paynauTest\backend\src\Backend.Application\bin\Debug\net8.
 C:\Users\PELT\Desktop\paynauTest\backend\src\Backend.Application\bin\Debug\net8.0\Backend.Domain.pdb
 C:\Users\PELT\Desktop\paynauTest\backend\src\Backend.Application\obj\Debug\net8.0\Backend.Application.csproj.AssemblyReference.cache
 C:\Users\PELT\Desktop\paynauTest\backend\src\Backend.Application\obj\Debug\net8.0\Backend..65AE5655.Up2Date
+C:\Users\PELT\Desktop\paynauTest\backend\src\Backend.Application\obj\Debug\net8.0\Backend.Application.sourcelink.json

@@ -5,7 +5,7 @@ import Loader from "../loader"
 import NewPerson from "../newPerson";
 import List from "../listPeople";
 
-const API_URL = 'http://localhost:5101/api/v1/person/';
+const API_URL = 'http://localhost:5000/api/v1/person/';
 
 export default function Main() {
     const getTodayDate = () => {

@@ -9,3 +9,4 @@ C:\Users\PELT\Desktop\paynauTest\backend\src\Backend.Domain\obj\Debug\net8.0\Bac
 C:\Users\PELT\Desktop\paynauTest\backend\src\Backend.Domain\obj\Debug\net8.0\refint\Backend.Domain.dll
 C:\Users\PELT\Desktop\paynauTest\backend\src\Backend.Domain\obj\Debug\net8.0\Backend.Domain.pdb
 C:\Users\PELT\Desktop\paynauTest\backend\src\Backend.Domain\obj\Debug\net8.0\ref\Backend.Domain.dll
+C:\Users\PELT\Desktop\paynauTest\backend\src\Backend.Domain\obj\Debug\net8.0\Backend.Domain.sourcelink.json

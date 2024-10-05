@@ -17,8 +17,15 @@ namespace Backend.Persistence
         public static IServiceCollection AddPersistence(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddDbContext<DatabaseService>(options =>
-            options.UseMySql(configuration["ConnectionStrings:MySqlConnection"], new MySqlServerVersion(new Version(8, 0, 23)))
-            );
+                options.UseMySql(configuration["ConnectionStrings:MySqlConnection"], new MySqlServerVersion(new Version(8, 0, 23)),
+                mySqlOptions =>
+                {
+                    mySqlOptions.EnableRetryOnFailure(
+                        maxRetryCount: 5,
+                        maxRetryDelay: TimeSpan.FromSeconds(30),
+                        errorNumbersToAdd: null
+                    );
+                }));
 
             services.AddScoped<IDatabaseService, DatabaseService>();
 

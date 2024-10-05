@@ -132,3 +132,4 @@ C:\Users\PELT\Desktop\paynauTest\backend\src\Backend.Api\bin\Debug\net8.0\Micros
 C:\Users\PELT\Desktop\paynauTest\backend\src\Backend.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\PELT\Desktop\paynauTest\backend\src\Backend.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\PELT\Desktop\paynauTest\backend\src\Backend.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\PELT\Desktop\paynauTest\backend\src\Backend.Api\obj\Debug\net8.0\Backend.Api.sourcelink.json

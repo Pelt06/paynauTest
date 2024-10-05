@@ -21,7 +21,7 @@ export default function List({ people, handleEdit, handleDelete }) {
         <tbody>
           {people.length === 0 ? (
             <tr>
-              <td colSpan="5" className="text-center text-gray-400">No hay personas registradas.</td>
+              <td colSpan="7" className="text-center text-gray-400">No hay personas registradas.</td>
             </tr>
           ) : (
             people.map((person) => (

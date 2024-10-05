@@ -83,7 +83,7 @@ namespace Backend.Api.Controllers
         {
             var data = await getAllPeopleQuery.Execute();
 
-            if(data == null || data.Count == 0)
+            if(data == null)
                 return StatusCode(StatusCodes.Status404NotFound, ResponseApiService.Response(StatusCodes.Status404NotFound, data));
 
             return StatusCode(StatusCodes.Status200OK, ResponseApiService.Response(StatusCodes.Status200OK, data));
