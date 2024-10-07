@@ -11,7 +11,7 @@
 
 ## 🛠️ Tecnologías Utilizadas
 
-- **Frontend**: [Next.js](https://nextjs.org/) con [Tailwind CSS](https://tailwindcss.com/)
+- **Frontend**: [Next.js](https://nextjs.org/)
 - **Backend**: [ASP.NET Core](https://dotnet.microsoft.com/apps/aspnet) con Clean Architecture y una base de datos MySQL
 - **Gestión de Estado**: React Hooks
 
